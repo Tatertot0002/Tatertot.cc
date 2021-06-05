@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Tatertot Stats</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="https://cdn.discordapp.com/avatars/454323110569574422/15e18bcda9036ea4e199f7839b5a07a2.webp?size=512" style="width:90px" type="image/x-icon">
+
+    </head>
+    <body>
+        <div class="nb">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="Profiles.html">Social Media</a>
+            <a href="ungame.wtf">United Nation</a>
+            <a href="peacekeeper.html">PeaceKeeper</a>
+            <a class="active" href="stats.html">Stats</a>
+          </div>
+          <div style="margin: 30px;" class="tab">
+            <button class="tablinks" onclick="openCity(event, 'CSGO')" id="defaultOpen">CSGO</button>
+            <button class="tablinks" onclick="openCity(event, 'siege')">R6</button>
+            <button class="tablinks" onclick="openCity(event, 'Minecraft')">Minecraft</button>
+          </div>
+          
+          <div id="CSGO" class="tabcontent">
+            <h3>CSGO</h3>
+            <p>Garbage</p>
+          </div>
+          
+          <div id="siege" class="tabcontent">
+            <h3>R6</h3>
+            <p>Semi Good</p> 
+          </div>
+          
+          <div id="Minecraft" class="tabcontent">
+            <h3>Minecraft</h3>
+            <p>God</p>
+          </div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+          </script>
+          <div class="fb">
+            <footer>
+                <div class="social"><a href="https://www.youtube.com/channel/UC_z-j0OBCacEUSzDvpj9AfA"><i class="icon ion-social-youtube"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="peacekeeper.html"><i class="icon ion-social-nodejs"></i></a></div>
+        
+                <p class="copyright">Tate Roller © 2021</p>
+            </footer>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        </div>
+    </body>
+</html>
